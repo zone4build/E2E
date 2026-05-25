@@ -1,0 +1,21 @@
+{
+  "name": "zone4build-e2e",
+  "version": "1.0.0",
+  "description": "Playwright End-to-End tests for Zone4Build",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:live": "playwright test tests/live/",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.4.5"
+  }
+}
