@@ -1,5 +1,5 @@
 {
-  "name": "zone4build-e2e",
+  "name": "@zone4build/e2e",
   "version": "1.0.0",
   "description": "Playwright End-to-End tests for Zone4Build",
   "main": "index.js",
