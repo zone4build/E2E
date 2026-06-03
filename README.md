@@ -2,6 +2,24 @@
 
 A standalone Playwright E2E testing framework to test the Zone4Build platform in local development, staging, or production environments.
 
+## 🎯 Mission Description
+Our goal is to achieve **100% End-to-End coverage** of critical user journeys across all Zone4Build applications and microservices. 
+Instead of testing isolated apps, this suite tests **Feature Epics**—simulating real-world scenarios where a user interacts with multiple platforms (e.g., a Vendor creates a product in the Shop app, and a Customer buys it in the Client app).
+
+## 🌍 Target Environments & Default URLs
+By default, tests are configured to run against your local development servers. Ensure the respective apps and APIs are running before executing tests.
+
+| Application | Default Local URL | Production URL |
+| :--- | :--- | :--- |
+| **Admin App** | `http://localhost:3000` | `https://dashboard.zone4build.com` |
+| **Client App** | `http://localhost:3001` | `https://www.zone4build.com` |
+| **Shop/Vendor App** | `http://localhost:3002` | `https://shop.zone4build.com` |
+| **Delivery App** | `http://localhost:3003` | `https://delivery.zone4build.com` |
+| **Tenant App** | `http://localhost:3004` | `https://tenant1.zone4build.com` |
+| **Backend APIs** | `http://localhost:4000` | `https://api.zone4build.com` |
+
+*Note: You can override any of these by modifying the `ui/E2E/.env.test` file.*
+
 ## 📁 Directory Structure
 
 ```text
