@@ -2,17 +2,22 @@ import { test as base } from '@playwright/test'
 import { DashboardPage } from '../pages/DashboardPage'
 import { LivePage } from '../pages/LivePage'
 import { MarketplacePage } from '../pages/MarketplacePage'
+import { AuthPage } from '../pages/AuthPage'
 
 type MyFixtures = {
   dashboardPage: DashboardPage
   livePage: LivePage
   marketplacePage: MarketplacePage
+  authPage: AuthPage
   vendorLoggedInPage: { page: any; dashboard: DashboardPage }
 }
 
 export const test = base.extend<MyFixtures>({
   dashboardPage: async ({ page }, use) => {
     await use(new DashboardPage(page))
+  },
+  authPage: async ({ page }, use) => {
+    await use(new AuthPage(page))
   },
   livePage: async ({ page }, use) => {
     await use(new LivePage(page))
